@@ -1,0 +1,9 @@
+numpy==1.23.5
+pandas==1.5.3
+pyradiomics==v3.0.1
+scipy==1.10.0
+trimesh==3.22.3
+matplotlib==3.7.0
+scikit-learn==1.2.1
+xgboost==1.7.5
+joblib==1.1.1
