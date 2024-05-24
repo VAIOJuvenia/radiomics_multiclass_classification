@@ -23,6 +23,7 @@ Data Structure
 # Preprocessing
 
 if both images and masks are present, we considered the case to be valid. Based on this logic, A list of all eligible cases was generated.
+![Y label](https://raw.githubusercontent.com/VAIOJuvenia/radiomics_multiclass_classification/main/Y_distribution.jpg)
 
 # Feature extraction
 
@@ -39,6 +40,7 @@ Since the scikit-learn models assume the Y label expressed as integers, a new nu
 # Feature selection
 
 Radiomics features were selected in an unsupervised way by removing one of the highly correlated feature pairs by a predefined threshold for the correlation coefficient. After this, supervised feature selection by LASSO regression was performed, which was repeated 100 times based on batches sampled differently from training data. Following concatenation of results of 100 cycles of LASSO regression, features were selected if it appeared in more than 20% of 100 cycles.
+![Feature selection](https://raw.githubusercontent.com/VAIOJuvenia/radiomics_multiclass_classification/main/relative_importance.jpg)
 
 # Model Training and Evaluation
 
