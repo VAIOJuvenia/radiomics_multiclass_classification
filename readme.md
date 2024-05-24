@@ -43,6 +43,7 @@ Radiomics features were selected in an unsupervised way by removing one of the h
 # Model Training and Evaluation
 
 Here, we adopted different algorithms available in sci-kit learn library, including Random Forests, XGBoost and so on. To yield optimal performance of these algorithms, hyperparameter tuning by grid search was adopted, with "roc_auc_ovr" as the metric for tuning. For the evaluation of the model performance, metrics like Matthew correlation coefficient, Cohen kappa, log loss, auc-ovr-weighted, weighted f1 value, precision and recall, were used, given the multiclass classification nature. Additionally, the bootstrapping method to calculate the 95% confidence interval was adopted.
+![Result](https://raw.githubusercontent.com/VAIOJuvenia/radiomics_multiclass_classification/main/LDA.jpg)
 
 # Prediction
 
